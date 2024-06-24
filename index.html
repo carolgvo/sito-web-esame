@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<html>
+	<head>
+
+		<title>Preraffaelliti. Rinascimento Moderno</title>
+		 	<!-- capire perchè non funziona favicon -->
+		<link rel="icon" type="image/x-icon" href="image/favicon.ico">
+		<!-- # -->
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="Stile/style.css"/>
+		<link rel= "stylesheet" href= "https://fonts.googleapis.com/css?family=Noto Sans"/>
+		<link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+		<script src="https://kit.fontawesome.com/0304187f40.js" crossorigin="anonymous"></script> 
+		<META NAME="DC.Title" CONTENT="Preraffaelliti. Rinascimento Moderno">
+		<META NAME="DC.Creator" CONTENT="Carolina Gavio">
+		<META NAME="DC.Subject" CONTENT="Preraffaelliti, Rinascimento, Mostra, quadri, manifestazioni artistiche, Forlì">
+		<META NAME="DC.Description" CONTENT="Sito web creato come esercitazione per il corso di DH">
+		<META NAME="DC.Publisher" CONTENT="Università di Bologna">
+		<META NAME="DC.Date" CONTENT="2024">
+		<META NAME="DC.Type" CONTENT="Sito web">
+		<META NAME="DC.Format" CONTENT="HTML">
+		<META NAME="DC.Identifier" CONTENT="TBD una volta che sia pubblicato">
+		<META NAME="DC.Language" CONTENT="Italiano">
+		<META NAME="DC.Rights" CONTENT="Accesso libero creative commons">
+	</head>
+	<body>
+
+		<!--Elemento header per la testata della pagina-->
+		<header>
+			<div class="header">
+			<hgroup>
+				<h1><span class="titoloHeader"><bold>PRERAFFAELLITI</bold></span></h1>
+				<h2>Rinascimento moderno</h2>
+				<h3>Forlì, Museo Civico San Domenico</h3>
+			</hgroup>
+		</header>
+		
+		<!-- Elemento nav per il menu di navigazione-->
+		<nav>
+  		<div class="navbar" class="topnav">
+ 			<a href="#home" title="Vai alla home">Home</a>
+  		<a href="#news" title="Vai al Progetto">Il progetto</a>
+ 		 <div class="dropdown">
+   		 <button class="dropbtn" title="Vai al catalogo">Il catalogo
+      	<i class="fa fa-caret-down"></i>
+    	</button>
+    <div class="dropdown-content">
+      <a href="list-item.html" title="Vai alla navigazione per tipologia">Tipologia</a>
+      <a href="map.html" title="Vai alla mappa">Luoghi</a>
+      <a href="timeline.html" title="Vai alla linea del tempo">Date</a>
+ 			<a href="#" title="Vai alla navigazione per persone">Persone</a>
+      <a href="#" title="Vai alla navigazione A-Z">Lista A-Z</a>
+      <a href="#" title="Vai alla navigazione Z-A">Lista Z-A</a>
+    </div>
+  </div>
+</div>
+
+			<!--Inserire slideshow con bottoni di esplorazione -->
+			<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="image/Rossetti-La vedova romana.jpg" style="width:100%" alt="La vedova romana, Dante Gabriel Rossetti">
+    <div class="carousel-caption">Dante Gabriel Rossetti, <cite>Roman Widow (Dîs Manibus)</cite>, 1874, Ponce (Porto Rico), Museo de Arte de Ponce</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="image/Della Robbia.webp" style="width:100%" alt="L'arcangelo Gabriele, Andrea della Robbia">
+    <div class="carousel-caption">Andrea Della Robbia, <cite>San Michele Arcangelo</cite>, 1478-1479, Volterra, Museo Diocesano di Arte Sacra</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="image/Burne-Jones_piano.jpeg" style="width:100%" alt="The Graham Piano, Edward Burne-Jones">
+    <div class="carousel-caption">Edward Burne-Jones, <cite>The Graham Piano</cite>, 1879-1880, collezione privata</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="image/DeCarolis.pdf" style="width:100%" alt="Laudata sii per la bella luce che desti in terra, Adolfo De Carolis">
+    <div class="carousel-caption">Adolfo De Carolis, <cite>Laudata sii per la bella luce che desti in terra</cite>, 1900, collezione privata</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" title="Mostra l'immagine successiva" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" title="Mostra l'immagine precedente" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+	<script>
+
+		let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}	
+	</script>
+		</nav>
+
+
+		<!-- Elemento section per la serie delle sezioni della pagina-->
+		<section class=prima>
+			<div class="progetto">
+				<h2>Il progetto</h2>
+				<p>Il progetto ha come obiettivo l'inserimento in una collezione digitale delle opere esposte alla mostra <a target="_blank" href="https://mostremuseisandomenico.it/preraffaelliti/" title="Apre il sito della mostra"><strong>Preraffaelliti. Rinascimento Moderno</strong></a> nella sede del <a target="_blank" href="https://mostremuseisandomenico.it/museo-civico-san-domenico/" title="Apre il sito del museo">Museo Civico San Domenico</a> di Forlì <strong>dal 24 febbraio al 30 giugno 2024</strong>. Attraverso un dialogo con i Maestri del Rinascimento italiano, tramite alcune opere esposte, la mostra si propone di illustrare l'ispirazone e il confronto con il passato che animò gli artisti inglesi del diciannovesimo secolo. La mostra è la più grande mai organizzata sul movimento artistico, con oltre 300 opere esposte, che ripercorrono l'operato artistico di tre generazioni di uomini e donne, tra Ottocento e Novecento. 
+				</p>
+				<p><button class="btn"><a href="#" title="Apre la pagina di descrizione del progetto">Scopri di più</a></button></p>
+			</div>
+
+			<div class="strumenti">
+				<h2>Esplora il catalogo con diversi strumenti</h2>
+				<div class="row">
+  				<div class="column">
+   				 <div class="card">
+   				 		<i class="fa-regular fa-clock"> <h3> Linea del tempo </h3> </i>
+   				 			<p>Esplora gli oggetti artistici presenti nella mostra usando questa <em>LINEA DEL TEMPO</em> per scoprire i capolavori degli artisti Preraffaelliti e viaggiando indietro nel tempo fino ai maestri del Rinascimento italiano.</p>
+   				 			<p><button class="btn"><a href="timeline.html" class="link-esplorazione" title="Vai alla linea del tempo">Linea del tempo</a></button></p>
+   				 </div>
+  		</div>
+ 				 <div class="column">
+    			<div class="card">
+    				<i class="fa-regular fa-map"><h3>Mappa</h3></i>
+   				 			<p> La <em>MAPPA</em> permette di navigare nel catalogo scoprendo i luoghi di produzione e conservazione dei manufatti, nonché alcuni luoghi rilevanti per la produzione artistica di questo movimento.</p>
+   				 			<p><button class="btn"><a href="map.html" class="link-esplorazione" title="Vai alla mappa">Mappa</a></button></p>
+    			</div>
+  		</div>
+  			<div class="column">
+    			<div class="card">
+    				<i class="fa-regular fa-list"><h3>Lista</h3></i>
+   				 			<p> L'ultimo metodo di esplorazione è la <em>LISTA</em>, che permette di visualizzare l'intero catalogo, ordinabile in particolare per <em>tipologia di oggetto</em>ma anche dalla A alla Z e dalla Z alla A, oltre a fornire filtri per la navigazione tematica per <em>persona</em>.</p>
+   				 			<p><button class="btn"><a href="list-item.html" class="link-esplorazione" title="Vai alla lista">Lista</a></button></p>
+    			</div>
+  		</div>
+		</div>
+	</section>
+
+<section class=seconda>
+			<div class="more">
+				<h2 class=titolorosa>Per saperne di più</h2>
+	<div class="row">
+  				<div class="column">
+   				 <div class="card">
+   				 		<h3> Comunicato stampa</h3> </i>
+   				 			<p>Leggi il <em>comunicato stampa</em> della mostra.</p>
+   				 			<p><button class="btn"><a target="_blank" href="https://www.artribune.com/mostre-evento-arte/preraffaelliti-rinascimento-moderno/" class="link-esplorazione" title="Vai alla pagina del comunicato stampa">Leggi di più</a></button></p>
+   				 </div>
+  		</div>
+ 				 <div class="column">
+    			<div class="card">
+    				<h3>Trailer</h3></i>
+   				 			<p> <iframe width="450" height="300" src="https://www.youtube.com/embed/-X8K0whTBfY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   				 			</p>
+    			</div>
+  		</div>
+  			<div class="column">
+    			<div class="card">
+    				<i class="fa-regular fa-list"><h3>Art Tribune</h3></i>
+   				 			<p> Leggi questo <em>articolo</em> sulla mostra su <em><strong>Art Tribune</strong></em>.</p>
+   				 			<p><button class="btn"><a target="_blank" href="https://www.artribune.com/arti-visive/arte-moderna/2024/04/preraffaelliti-mostra-forli/" class="link-esplorazione" title="Vai alla pagina dell'articolo">Leggi di più</a></button></p>
+    			</div>
+  		</div>
+
+		</section>		
+
+		<!--Elemento footer per il piede di pagina-->
+		<footer>
+			<p><a class=linkfooter href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc" title="Vedi tutti i progetti di DHarc dell'Università di Bologna">Tutti i progetti di /DH.arc</a></p>
+			<p><a class=linkfooter href="#" title="Vai ai crediti">Credits </a> | <a class=linkfooter href="https://creativecommons.org/licenses/by/4.0/" title="Vai alle licenze">Licenze</a></p>
+			<p>&copy; Copyright Carolina Gavio, 2024 - Corso di Digital Humanities e Patrimonio Culturale</p>
+			</footer>
+
+
+	</body>
+
+
+</html>

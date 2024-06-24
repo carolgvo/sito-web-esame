@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mp:metadata xmlns:mp="http://example.org/MyProject/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://example.org/MyProject/ http://example.org/MyProject/schema.xsd">
+<dc:title>Roman Widow</dc:title>
+<dcterms:alternative>Dîs manibus</dcterms:alternative>
+<dcterms:creator xsi:type="mp:viaf" mp:ref="http://viaf.org/viaf/41848725">Dante Gabriel Rossetti</dcterms:creator>
+<dc:subject>Preraphaelites, Widow, Roman Urn, Flowers, Lyre</dc:subject>
+<dc:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85106390</dc:subject>
+<dc:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85079175</dc:subject>
+<dc:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85146612</dc:subject>
+<dc:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh88002472</dc:subject>
+<dc:subject xsi:type="mp:BNCF">27752</dc:subject>
+<dc:subject xsi:type="mp:BNCF">34632</dc:subject>
+<dc:subject xsi:type="mp:BNCF">37213</dc:subject>
+<dc:subject xsi:type="mp:BNCF">74242</dc:subject>
+<dc:subject xsi:type="mp:BNCF">8679</dc:subject>
+<dc:description>
+Roman Widow is a painting by Gabriel Dante Rossetti depicting a roman woman, whose husband has died. His ashes are contained in the Urn in the background. The woman is sorrounded by floral garlands and carries a lyre.
+</dc:description>
+<dc:publisher>Ponce (Porto Rico), Museo de Arte de Ponce, The Luis A. Ferré Foundation, Inc.</dc:publisher>
+<dc:coverage xsi:type="dcterms:Geonames" mp:ref="https://www.geonames.org/4566367/museo-de-arte-de-ponce.html">4566367</dc:coverage>
+<dcterms:created>1874</dcterms:created>
+<dc:identifier xsi:type="mp:catalogo" mp:ref="https://museoarteponce.org">60. 0149</dc:identifier>
+<!--  dcterms per forma controllata delle date -->
+<dcterms:modified xsi:type="dcterms:W3CDTF">2024-06-24</dcterms:modified>
+<!--  dcterms per forma controllata del formato -->
+<dc:format xsi:type="dcterms:MIME">RFC2045</dc:format>
+<dc:source>
+https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+</dc:source>
+</mp:metadata>

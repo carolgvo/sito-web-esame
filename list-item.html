@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="it">
+<html>
+	<head>
+		<title>Preraffaelliti. Rinascimento Moderno</title>
+		 	<!-- capire perchè non funziona favicon -->
+		<link rel="icon" type="image/x-icon" href="image/favicon.ico">
+		<!-- # -->
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="Stile/style.css"/>
+		<link rel= "stylesheet" href= "https://fonts.googleapis.com/css?family=Noto Sans"/>
+		<link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+		<script src="https://kit.fontawesome.com/0304187f40.js" crossorigin="anonymous"></script> 
+		<META NAME="DC.Title" CONTENT="Preraffaelliti. Rinascimento Moderno">
+		<META NAME="DC.Creator" CONTENT="Carolina Gavio">
+		<META NAME="DC.Subject" CONTENT="Preraffaelliti, Rinascimento, Mostra, quadri, manifestazioni artistiche, Forlì">
+		<META NAME="DC.Description" CONTENT="Sito web creato come esercitazione per il corso di DH">
+		<META NAME="DC.Publisher" CONTENT="Università di Bologna">
+		<META NAME="DC.Date" CONTENT="2024">
+		<META NAME="DC.Type" CONTENT="Sito web">
+		<META NAME="DC.Format" CONTENT="HTML">
+		<META NAME="DC.Identifier" CONTENT="TBD una volta che sia pubblicato">
+		<META NAME="DC.Language" CONTENT="Italiano">
+		<META NAME="DC.Rights" CONTENT="Accesso libero creative commons">
+	</head>
+
+	<body>
+		<header>
+			<div class="header">
+				<h1><span class="titoloHeader"><bold>PRERAFFAELLITI</bold></span></h1>
+				<h2>Rinascimento moderno</h2>
+				<h3>Forlì, Museo Civico San Domenico</h3>
+			</div>
+		</header>
+
+	<nav>
+  		<div class="navbar" class="topnav">
+ 			<a href="index.html" title="Vai alla home">Home</a>
+  		<a href="#news" title="Vai al progetto">Il progetto</a>
+ 		 <div class="dropdown">
+   		 <button class="dropbtn" title="Vai al catalogo">Il catalogo
+      	<i class="fa fa-caret-down"></i>
+    	</button>
+    	 <div class="dropdown-content">
+      		<a href="list-item.html" title="Vai alla navigazione per tipologia">Tipologia</a>
+      <a href="map.html" title="Vai alla mappa">Luoghi</a>
+      <a href="timeline.html" title="Vai alla linea del tempo">Date</a>
+ 			<a href="#" title="Vai alla navigazione per persone">Persone</a>
+      <a href="#" title="Vai alla navigazione A-Z">Lista A-Z</a>
+      <a href="#" title="Vai alla navigazione Z-A">Lista Z-A</a>
+    	</div>
+  		</div>
+		</div>
+	</nav>
+
+	<section>
+	<div class="row">
+		<!--colonna sinistra: Breadcrumbs + accordion -->
+		<div class="leftcolumn">
+			<ul class="breadcrumb">
+  			<li><a href="index.html" title="Vai alla home">Home</a></li>
+  			<li><a href="#" title="Vai al catalogo">Il Catalogo</a></li>
+  			</ul>
+
+  		
+  			<button class="accordion">Tipologia</button>
+			<div class="panel">
+  				<p>Naviga filtrando gli oggetti in base alla tipologia, scegliendo tra <em>quadri, arazzi, strumenti musicali, libri, manufatti</em> e molto altro...</p>
+  				<p><a class="btn" href="list-item.html" title="Vai alla navigazione per tipologia">Naviga</a></p>
+			</div>
+
+			<button class="accordion">Luoghi</button>
+			<div class="panel">
+  				<p>Esplora i luoghi relativi ai manufatti e alle opere d'arte sulla <span>mappa</span>.</p>
+  				<p><a class="btn" href="map.html" title="Vai alla mappa">Naviga</a></p>
+			</div>
+
+			<button class="accordion">Date</button>
+			<div class="panel">
+  				<p>Orientati sulla linea del tempo, dal Rinascimento al XX secolo, per scoprire le ispirazioni provenienti dall'Italia e dall'Europa che hanno mosso i membri del movimento preraffaellita.</p>
+  				<p><a class="btn" href="timeline.html" title="Vai alla linea del tempo">Naviga</a></p>
+			</div>
+
+			<button class="accordion">Persone</button>
+			<div class="panel">
+  				<p>Esplora gli oggetti del catalogo per soggetti produttori o altri contributori legati alla loro storia</p>
+  				<p><a class="btn" href="timeline.html" title="Vai alla navigazione per persone">Naviga</a></p>
+			</div>
+
+			<button class="accordion" title="Vai alla navigazione A-Z">Navigazione A-Z</button>
+			<div class="panel">
+  				<p>Lorem ipsum...</p>
+			</div>
+
+			<button class="accordion" title="Vai alla navigazione Z-A">Navigazione Z-A</button>
+			<div class="panel">
+  				<p>Lorem ipsum...</p>
+			</div>
+
+		</div>
+
+		<!--colonna destra: H2 + cards-->
+		<div class="rightcolumn">
+			<div class=titolo>
+				<h2 class=catalogo>Il Catalogo</h2>
+			</div>
+			<div class=tabs>
+
+				<button class="tablink" onclick="openPage('Home')" id="defaultOpen">Pittura</button>
+				<button class="tablink" onclick="openPage('News')" >Scultura</button>
+				<button class="tablink" onclick="openPage('Contact')">Arti applicate</button>
+				<button class="tablink" onclick="openPage('About')">Arazzi</button>
+				<button class="tablink" onclick="openPage('Books')">Libri</button>
+
+				<div id="Home" class="tabcontent">
+ 				<h3 class="h3tabcontent">PITTURA</h3>
+					<div class="row">
+  						<div class="columnitems">
+  								<div class="card">
+  									<img src="image/Rossetti-La vedova romana.jpg" alt="La vedova romana, Dante Gabriel Rossetti" style="width: 100%"/>
+  									<div class="container">
+  										<div class=testocard>
+    										<h4>Creatore:<b><a href="http://viaf.org/viaf/41848725" target="_blank" title="Identificativo VIAF del creatore dell'opera">Dante Gabriel Rossetti<sup>VIAF</sup></a></b></h4>
+    										<p><span class="criteri">Titolo:</span><cite><a href="item_RomanWidow.html" title="Vai all'opera">Roman Widow (Dîs Manibus)</a></cite></p>
+    										<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1872</a></span></p>
+    										<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa">Ponce (Porto Rico), Museo de Arte de Ponce, The Luis A. Ferré Foundation, Inc.</a></span></p>
+    									</div>
+    									<p><button class="btn"><a href="item_RomanWidow.html">Vai all'opera</a></button></p>
+  								</div>
+								</div>
+  							</div>
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/DeCarolis.pdf" alt="Laudata sii per la bella luce che desti in terra, Adolfo De Carolis" style="width:100%">
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<b><a href="Permalink: http://viaf.org/viaf/76586979" target="_blank" title="Identificativo VIAF del creatore dell'opera">Adolfo de Carolis<sup>VIAF</sup></a></b></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">Laudata sii per la bella luce che desti in terra</a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1900</a></span></p>
+    									<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa">Collezione privata</a></span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  									</div>
+								</div>
+  							</div>
+  					</div>
+
+  					<div class="row">
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/Rossetti_PaoloeFrancesca.jpeg" alt="Paolo e Francesca, Dante Gabriel Rossetti" style="width: 100%"/>
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<b><a href="http://viaf.org/viaf/41848725" target="_blank" title="Identificativo VIAF del creatore dell'opera">Dante Gabriel Rossetti<sup>VIAF</sup></a></b></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">Paolo and Francesca</a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1862</a></span></p>
+    									<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa">Bedford, The Higgins Bedford Art & Gallery Museum</a></span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  								</div>
+							</div>
+  						</div>
+  	
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/MadoxBrown.jpg" alt="I semi e i frutti della poesia inglese, Ford Madox Brown" style="width:100%">
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<b><a href="http://viaf.org/viaf/69202953" target="_blank" title="Identificativo VIAF del creatore dell'opera">Ford Madox Brown<sup>VIAF</sup></a></b></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">The Seeds and Fruits of English Poetry</a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1845-1853</a></span></p>
+    									<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa">Oxford, The Ashmolean Museum, University of Oxford</a></span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  								</div>
+							</div>
+						</div>
+  					</div>
+
+  					<div class="row">
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/Dicksee_RomeoeGiulietta.jpg" alt="Romeo e Giulietta, Frank Dicksee" style="width: 100%"/>
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<b><a href="http://viaf.org/viaf/69203451" target="_blank" title="Identificativo VIAF del creatore dell'opera">Frank Dicksee<sup>VIAF</sup></a></b></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">Romeo and Juliet</a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1884</a></span></p>
+    									<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa">Southampton, Southampton City Art Gallery</a></span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  								</div>
+							</div>
+  						</div>
+  	
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/EvelyndeMorgan_Flora.jpeg" alt="Flora, Evelyn De Morgan" style="width:100%">
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<b><a href="http://viaf.org/viaf/79482643" target="_blank" title="Identificativo VIAF del creatore dell'opera">Evelyn De Morgan<sup>VIAF</sup></a></b></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">Flora</a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1889</a></span></p>
+    									<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa">Birkenhead, Wirral Museum Service</a></span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  								</div>
+							</div>
+						</div>
+  					</div>
+
+				</div>
+  	
+  	
+				<div id="News" class="tabcontent">
+  				<h3 class="h3tabcontent">SCULTURA</h3>
+  					<div class="row">
+  	
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/Della Robbia.webp" alt="San Michele Arcangelo, Andrea Della Robbia" style="width:100%">
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<b><a href="http://viaf.org/viaf/5725006" target="_blank" title="Identificativo VIAF del creatore dell'opera">Andrea della Robbia<sup>VIAF</sup></a></b></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">San Michele Arcangelo</a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1478-1479</a></span></p>
+    									<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa">Volterra, Museo Diocesano di Arte Sacra</a></span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  								</div>
+							</div>
+  						</div>
+  	
+  						<div class="columnitems">
+  	
+  						</div>
+
+					</div>
+				</div>
+
+				<div id="Contact" class="tabcontent">
+  				<h3 class="h3tabcontent">ARTI APPLICATE</h3>
+    				<div class="row">
+  	
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/Burne-Jones_piano.jpeg" alt="The Graham Piano, Edward Burne-Jones" style="width:100%">
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<b><a href="http://viaf.org/viaf/59120251" target="_blank" title="Identificativo VIAF del creatore dell'opera">Edward Burne-Jones<sup>VIAF</sup></a></b></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">The Graham Piano</a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1879-1880</a></span></p>
+    									<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa"></a>Collezione privata</span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  								</div>
+							</div>
+  						</div>
+  	
+  						<div class="columnitems">
+  							<p></p>
+  						</div>
+					</div>
+				</div>
+
+				<div id="About" class="tabcontent">
+  				<h3 class="h3tabcontent">ARAZZI</h3>
+  					<div class="row">
+  	
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/arazzo.jpg" alt="Quattro arazzi sul Santo Graal, autori vari" style="width:100%">
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<p><b><a href="http://viaf.org/viaf/59120251" target="_blank" title="Identificativo VIAF del creatore dell'opera">Edward Burne-Jones<sup>VIAF</sup></a></b></p>
+    										<p><b><a href="http://viaf.org/viaf/22146194" target="_blank" title="Identificativo VIAF del creatore dell'opera">William Morris<sup>VIAF</sup></a></b></p>
+    										<p><b><a href="http://viaf.org/viaf/59018897" target="_blank" title="Identificativo VIAF del creatore dell'opera">John Henry Dearle<sup>VIAF</sup></a></b></p>
+    										<p><b><a href=" http://viaf.org/viaf/154661086" target="_blank" title="Identificativo VIAF del creatore dell'opera">Morris & Co.<sup>VIAF</sup></a></b></p></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">Quattro arazzi sul <em>Santo Graal</em></a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1890-1899</a></span></p>
+    									<p><span class="criteri">Luogo di conservazione:</span><span><a href="map.html" title="Vedi sulla mappa">Collezione privata</a></span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  								</div>
+							</div>
+  						</div>
+
+  						<div class="columnitems">
+  							<p></p>
+  						</div>	
+					</div>
+				</div>
+
+				<div id="Books" class="tabcontent">
+  				<h3 class="h3tabcontent">LIBRI</h3>
+  					<div class="row">
+  	
+  						<div class="columnitems">
+  							<div class="card">
+  								<img src="image/libroRossetti.jpeg" alt="The Early Italian Poets, Dante Gabriel Rossetti" style="width:100%">
+  								<div class="container">
+    								<div class=testocard>
+    									<h4>Creatore:<b><a href="http://viaf.org/viaf/41848725" target="_blank" title="Identificativo VIAF del creatore dell'opera">Dante Gabriel Rossetti<sup>VIAF</sup></a></b></h4>
+    									<p><span class="criteri">Titolo:</span><cite><a href="#" title="Vai all'opera">The Early Italian Poets</a></cite></p>
+    									<p><span class="criteri">Data di creazione:</span><span><a href="timeline.html" title="Vedi sulla linea del tempo">1861</a></span></p>
+    									<p><span class="criteri">Editore:</span><span><a href="map.html" title="Vedi sulla mappa">Smith, Elder & Co., London</a></span></p>
+    								</div>
+    								<p><button class="btn"><a href="#">Vai all'opera</a></button></p>
+  								</div>
+							</div>
+  						</div>
+  	
+  						<div class="columnitems">
+  							<p></p>
+  						</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+	</section>
+
+   	<footer>
+			<p><a class=linkfooter href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc" title="Vedi tutti i progetti di DHarc dell'Università di Bologna">Tutti i progetti di /DH.arc</a></p>
+			<p><a class=linkfooter href="#" title="Vai ai crediti">Credits </a> | <a class=linkfooter href="https://creativecommons.org/licenses/by/4.0/" title="Vai alle licenze">Licenze</a></p>
+			<p>&copy; Copyright Carolina Gavio, 2024 - Corso di Digital Humanities e Patrimonio Culturale</p>
+			</footer>
+
+		<script>
+   	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+		</script>
+
+
+		<script>
+		function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+		</script>
+
+
+	</body>
+</html>
