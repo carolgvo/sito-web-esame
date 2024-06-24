@@ -1,0 +1,584 @@
+body {
+	margin: auto;
+	font-family: "Bellota Text";
+	font-size: 16px;
+
+}
+
+
+header {	
+	background-image: url("../image/Rossetti-header.jpg");
+	background-repeat:repeat-x;
+	background-color: #ffb3b3;
+	background-position: center;
+	color: white;
+	opacity: 0.6;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: auto;
+  padding: 20px;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 45px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.carousel-caption {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 12px 16px;
+  position: absolute;
+  bottom: 18px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(26, 26, 26, .7); left: 0; right: 0; width: 100%;};
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: coral;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.header {
+
+}
+
+
+h1 {
+	font-family: "Bellota Text";
+	font-size: 70px;
+	background-color: #ffB3B3 ;
+	opacity:1;
+	color: #cc0052;
+}
+
+
+
+.titoloHeader {
+	color: #cc0052;
+	opacity: 1;
+}
+
+
+nav, .strumenti {
+	background-color:#ffe6e6; 
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Bellota Text;
+}
+
+/* Links inside the navbar */
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ccc;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ccc;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a:link, a:visited {
+	color:black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #cc0052;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bellota Text";
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.strumenti {
+	padding: auto;
+	margin: auto;
+}
+
+.more {
+	background-color: #333;
+	margin:auto;
+	padding:auto;
+}
+
+.correlati {
+	background-color: #ffe6e6;
+	color: #cc0052;
+
+
+}
+
+.titolorosa {
+	color:#ffb3b3;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white ;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color:#ffb3b3;
+  color:#cc0052;
+  border-radius: 5px;
+  font-family: "Bellota Text";
+}
+
+.progetto {
+	text-align: center;
+}
+
+
+footer {
+	background-image: url("../image/Opheliafooter.jpg");
+	color: white;
+	background-position: center;
+}
+
+
+
+footer a:hover {
+	text-decoration: underline;
+	color: #ffb3b3;
+}
+a.linkfooter{
+	color:white;
+}
+
+
+
+footer p, .header, .esplorazione {
+	text-align: center;
+}
+
+body, header, h1, nav, footer, div, a, img, p {
+	margin-left: auto;
+	padding: 15px;
+}
+
+/*two columns*/
+
+.leftcolumn {
+	float:left;
+	padding: auto;
+	width: 20%;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  color:#ff6666;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 2px;
+  color:#ff6666;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color:#ff6666;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #cc0052;
+  text-decoration: underline;
+}
+
+/*ACCORDION*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 16px;
+  font-family: "Bellota Text";
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: auto;
+  background-color: #333;
+  display: none;
+  overflow: hidden;
+  color: white;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.rightcolumn {
+	float: left;
+	padding: auto;
+	width:80%;
+}
+
+.catalogo {
+	text-align: center;
+	font-size: 35px;
+	color: #ff6666;
+	padding: auto;
+	margin: auto;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Bellota Text";
+}
+
+/* Style tab links */
+.tablink {
+	 border: 3px solid black;
+  background-color: white ;
+  padding: 14px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border-color:#ff6666;
+  color:#cc0052;
+  border-radius: 5px;
+  float: left;
+  width: 20%;
+  font-family: "Bellota Text";
+  
+}
+
+.tablink:hover {
+  background-color: #ff6666;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  background-color: #ffB3B3;
+  text-align: center;
+}
+#Home, #News, #Contact, #About, #Books {background-color: #ffB3B3;}
+
+
+.h3tabcontent {
+	font-size: 30px;
+	color: #ff6666;
+}
+
+.columnitems {
+  float: left;
+  width: 50%;
+  padding: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*cards*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color:#ff6666;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+
+}
+
+.testocard {
+	padding: auto;
+	text-align:left;
+}
+
+.criteri {
+	font-weight: bold;
+}
+
+h3.opere {
+	font-size: 25px;
+	color: #ff6666;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .rigtcolumn, .leftcolumn, .columnitems{
+    width: 100%;
+  }
+}
+
+/*layout tre colonne*/
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left{
+  width: 25%;
+}
+
+.right{
+  width: 20%;
+}
+
+.middle {
+  width: 55%;
+}
+
+.immagine_item {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.descrizioneItem {
+	background-color: #ffe6e6;
+}
+
+.btn-item {
+	border: 0.5px solid black;
+	border-radius: 10px;
+  background-color: white;
+  color: #cc0052;
+  padding: 14px 28px;
+  font-size: 14px;
+  cursor: pointer;}
+
+  .authorcard {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #f1f1f1;
+  text-align: center;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+.authorcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+  .authorcontainer {
+  	padding: 2px 16px;
+  }
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
